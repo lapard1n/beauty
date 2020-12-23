@@ -31,13 +31,19 @@ header, main, footer {
 }
 .sub-menu {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   @extend %flexCent;
   &__link {
     margin: 17px 15px 16px;
     text-decoration: none;
     color: #333333;
     cursor: pointer;
+    &:first-child {
+      margin-left: 25px;
+    }
+    &:last-child {
+      margin-right: 25px;
+    }
   }
 }
 
@@ -59,7 +65,7 @@ header, main, footer {
 }
 .logo {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +73,7 @@ header, main, footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 25px 0 20px;
+    margin: 25px 0 20px 25px;
   }
   &__img {
     /*404*/
@@ -109,14 +115,18 @@ header, main, footer {
       transform: translateX(-50%);
       transition: all .25s linear;
   }
-  &:hover::before, &:hover::after{
-    width: 115%;
-  }
+    &:hover::before, &:hover::after{
+      width: 115%;
+    }
+    &:active::before, &:active::after{
+      width: 115%;
+    }
   }
 }
 .connection {
   display: flex;
   align-items: center;
+  margin-right: 25px;
   &__number {
     margin: 0 40px 0;
     text-decoration: none;
@@ -154,7 +164,7 @@ header, main, footer {
 }
 .sup-menu {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   margin: 30px 0 25px;
   @extend %flexCent;
   &__link {
@@ -163,6 +173,12 @@ header, main, footer {
     font-size: 16px;
     color: #000000;
     cursor: pointer;
+    &:first-child {
+      margin-left: 25px;
+    }
+    &:last-child {
+      margin-right: 25px;
+    }
   }
 }
 
@@ -198,12 +214,12 @@ header, main, footer {
 .slider {
   width: 100%;
   height: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   &__title {
-    margin: 0;
+    margin: 0 25px;
     color: #FFFFFF;
     font: {
       weight: 700;
@@ -212,13 +228,14 @@ header, main, footer {
   }
   &__text {
     width: 308px;
-    margin: 50px 0;
+    margin: 50px 25px;
     line-height: 20px;
     color: #FFFFFF;
   }
   &__btn {
     width: 170px;
     height: 40px;
+    margin: 0 25px;
     outline: none;
     border: 2px solid #FFFFFF;
     border-radius: 25px;
@@ -245,10 +262,12 @@ header, main, footer {
 }
 .product {
   width: 100%;
-  max-width: 1110px;
-  margin: 80px 0px 100px;
+  max-width: 1160px;
+  margin: 80px 25px 100px;
   position: relative;
   &__title {
+  position: relative;
+    z-index: 2;
     font: {
       weight: 700;
       size: 24px;
@@ -257,6 +276,7 @@ header, main, footer {
   }
   &__img {
     position: absolute;
+    z-index: 1;
     right: 0;
     top: 0;
     transform: translateY(-50%);
@@ -264,18 +284,20 @@ header, main, footer {
 }
 .item-case {
   width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: space-between;
-    align-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  gap: 30px;
 }
 .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 255px;
+  max-width: 250px;
+  min-width: 220px;
   height: 363px;
+  padding: 10px;
   background: #FFFFFF;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
   &__img {
@@ -323,7 +345,7 @@ header, main, footer {
 }
 .advertising {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   margin-bottom: 132px;
   display: flex;
   justify-content: space-between;
@@ -331,6 +353,7 @@ header, main, footer {
   &__block {
     width: 540px;
     height: 212px;
+    margin: 25px;
     position: relative;
     background: #66C05D;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
@@ -343,6 +366,8 @@ header, main, footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    z-index: 2;
   }
   &__title {
     margin: 0;
@@ -391,7 +416,9 @@ header, main, footer {
     }
   }
   &__img {
+    width: 26%;
     position: absolute;
+    z-index: 1;
     right: 45px;
     top: 50%;
     transform: translateY(-50%);
@@ -431,13 +458,14 @@ header, main, footer {
 }
 .info {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   margin: 37px 0 37px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &__links {
     min-width: 236px;
+    margin: 0 25px;
     display: flex;
     justify-content: space-between;
   }
@@ -485,11 +513,13 @@ header, main, footer {
 }
 .end-line {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   p {
-    margin: 25px 0 25px;
+    margin: 25px;
   }
 }
+
+@import "./queries";
