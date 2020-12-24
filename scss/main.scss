@@ -262,11 +262,11 @@ header, main, footer {
 }
 .product {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1110px;
   margin: 80px 25px 100px;
   position: relative;
   &__title {
-  position: relative;
+    position: relative;
     z-index: 2;
     font: {
       weight: 700;

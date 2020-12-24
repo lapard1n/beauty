@@ -261,7 +261,7 @@ header, main, footer {
 
 .product {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1110px;
   margin: 80px 25px 100px;
   position: relative;
 }
@@ -534,10 +534,6 @@ header, main, footer {
   }
   .connection__number {
     margin: 0 0 10px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
-    cursor: pointer;
   }
 }
 @media (max-width: 880px) {
@@ -553,6 +549,9 @@ header, main, footer {
   .advertising {
     flex-direction: column;
     margin-bottom: 0;
+  }
+  .advertising__block {
+    width: 90%;
   }
   .advertising__block:first-child {
     margin-bottom: 0;
@@ -581,7 +580,92 @@ header, main, footer {
   }
 
   .connection._second {
+    flex-direction: row;
     margin: 0;
     order: -1;
+  }
+  .connection._second .connection__number {
+    margin: 0 15px 0 0;
+  }
+}
+@media (max-width: 695px) {
+  .sup-menu {
+    height: 50px;
+    flex-flow: row wrap;
+    align-content: space-between;
+  }
+  .sup-menu__link {
+    margin: 0 25px;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo__name {
+    margin: 25px 0 20px;
+  }
+
+  .connection._first {
+    display: none;
+  }
+
+  .item-case {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 434px) {
+  .connection__number {
+    display: none;
+  }
+
+  .sub-menu-case {
+    display: none;
+  }
+
+  .sup-menu {
+    height: 100px;
+    flex-flow: row wrap;
+    align-content: space-between;
+  }
+  .sup-menu__link {
+    margin: 0 25px;
+  }
+
+  .slider__text {
+    width: auto;
+  }
+
+  .advertising__block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .advertising__cont {
+    width: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+  }
+
+  .end-line {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .end-line p {
+    text-align: center;
+    margin: 25px;
+  }
+  .end-line p:last-child {
+    margin-top: 0;
+  }
+
+  .advertising__mail {
+    width: 80%;
   }
 }
