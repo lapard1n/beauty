@@ -1,10 +1,6 @@
 # beauty
 
-***
-
 **beauty** - это проект-пластилин, который слеплен из моих остаточных знаний о разработке. Так же являлся первой практикой в верстке из Figma, сделан по макету [Типичного Верстальщика - Анны Блок](https://www.youtube.com/channel/UCn5wduCq2Mus0v85QZn9IaA), [ссылка на сам макет](https://www.figma.com/file/V3l3zWEuVqixPQzeWw34AI/Templates-HTML%2FCSS?node-id=0%3A1&viewport=380%2C527%2C0.3488253355026245);
-
-***
 
 ## Offtop
 
